@@ -1,0 +1,62 @@
+{
+  "name": "beastbytes/cod-php",
+  "description": "PHP API document generator that uses PHP Reflection to analyse the code.",
+  "type": "library",
+  "keywords": [
+    "api",
+    "documentation",
+    "generator",
+    "php"
+  ],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Chris Yates",
+      "email": "chris.l.yates@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.4",
+    "phpdocumentor/reflection-docblock": "^6.0",
+    "symfony/console": "^8.0",
+    "yiisoft/files": "^2.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^v3.0",
+    "pestphp/pest": "^5.0",
+    "vimeo/psalm": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "BeastBytes\\CodPhp\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "BeastBytes\\CodPhp\\Tests\\": "tests"
+    }
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    },
+    "policy": {
+      "advisories": {
+        "block": true
+      }
+    }
+  },
+  "scripts": {
+    "test": "pest --parallel",
+    "document": "php Dev/update-documentation.php",
+    "psalm": "psalm analyse --no-interaction"
+  },
+  "scripts-descriptions": {
+    "test": "Run all tests!",
+    "document": "Generate documentation",
+    "psalm": "Run Psalm"
+  }
+}
