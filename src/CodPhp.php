@@ -12,7 +12,7 @@ use Symfony\Component\Console\Application;
 final class CodPhp
 {
     /** Current version of the application. */
-    public const string VERSION = '0.0.0';
+    public const string VERSION = '1.0.0';
 
     /**  Human-readable name of the application. */
     public const string NAME = 'CodPhp API Documentation Generator';
