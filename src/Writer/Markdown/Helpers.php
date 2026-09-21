@@ -57,7 +57,7 @@ final class Helpers
     private const string MD_DOC = '%s.md';
     private const string MD_LINK = '[%s](%s)';
     private const string MODIFIER = '<span class="cod-php-modifier">%s</span>';
-    private const string SOURCE_URL = '%s/%s.html';
+    private const string SOURCE_URL = '%s%s.php';
     private const string TD_LIST = PHP_EOL. PHP_EOL . '%s' . PHP_EOL . PHP_EOL;
     private const string TYPE = '<span class="cod-php-type">%s</span> $%s%s%s%s';
     private const string VISIBILITY = '<span class="cod-php-visibility">%s</span>';
@@ -262,7 +262,11 @@ final class Helpers
     {
         return self::a(
             'Source Code',
-            sprintf(self::SOURCE_URL, $baseUrl, self::toKebabCase($element->name))
+            sprintf(
+                self::SOURCE_URL,
+                trim($baseUrl, '/'),
+                str_replace('\\', '/', substr($element->fqcn, strlen($element->rootNamespace)))
+            )
         );
     }
 
