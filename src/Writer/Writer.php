@@ -116,7 +116,7 @@ abstract class Writer implements WriterInterface
         $parameters['element'] = new class () {
             public string $name = 'Index';
             public string $summary = 'API Index';
-            public string $elementType = '';
+            public string $elementType = 'all';
         };
 
         $this->writeFile(
