@@ -3,7 +3,6 @@
 
 #Documentation
 /docs/.vitepress/cache
-/docs/src/api/**
 
 # composer vendor dir
 /vendor
