@@ -12,6 +12,14 @@ use JsonSerializable;
 /** Represents a structural element documentation error. */
 final readonly class Error implements JsonSerializable
 {
+    /**
+     * Create a new Error.
+     *
+     * @param string $message Error message.
+     * @param Element $element Element with the error.
+     * @param ErrorLevel $level Error level.
+     * @param array<string, mixed> $context Context of the error.
+     */
     public function __construct(
         public private(set) string $message,
         public private(set) Element $element,
@@ -20,6 +28,7 @@ final readonly class Error implements JsonSerializable
     ) {
     }
 
+    /** Used when generation JSON error report */
     public function jsonSerialize(): array
     {
         $json = [];
