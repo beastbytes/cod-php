@@ -21,11 +21,6 @@ use BeastBytes\CodPhp\Writer\Writer;
  */
 
 $md = sprintf('### %s()' . PHP_EOL , $method->name);
-$md .= sprintf('Declared in %s' . PHP_EOL . PHP_EOL, Helpers::linkElements($element, $method->declaringClass));
-
-if ($method->hasTag('deprecated')):
-    $md .= Helpers::deprecationNotice($method);
-endif;
 
 if ($method->hasSummary):
     $md .= $method->summary . PHP_EOL . PHP_EOL;
@@ -51,6 +46,10 @@ endif;
 
 if ($method->hasTag('since')):
     $md .= '**Since:** ' . $method->since . PHP_EOL . PHP_EOL;
+endif;
+
+if ($method->hasTag('deprecated')):
+    $md .= Helpers::deprecationNotice($method);
 endif;
 
 $md .= '<table><tbody>';
@@ -106,6 +105,7 @@ endif;
 
 $md .= '</tbody></table>' . PHP_EOL . PHP_EOL;
 
+$md .= sprintf('Declared in %s' . PHP_EOL . PHP_EOL, Helpers::linkElements($element, $method->declaringClass));
 $links = $this->render('_links', ['element' => $method]);
 
 if (!empty($links)):

@@ -32,12 +32,20 @@ else:
     );
 endif;
 
+if ($property->hasTag('version')):
+    $md .= '**Version:** ' . $property->version . PHP_EOL . PHP_EOL;
+endif;
+
+if ($property->hasTag('since')):
+    $md .= '**Since:** ' . $property->since . PHP_EOL . PHP_EOL;
+endif;
+
 if ($property->hasTag('deprecated')):
     $md .= Helpers::deprecationNotice($property);
 endif;
 
-$md .= '| Type | Read/Write | Default | Declared In |' . PHP_EOL;
-$md .= '|-|:-:|-|-|' . PHP_EOL;
+$md .= '| Type | Read/Write | Default |' . PHP_EOL;
+$md .= '|-|:-:|-|' . PHP_EOL;
 
 $accessibility = [
     $property->canBeRead ? 'Read' : '',
@@ -45,17 +53,17 @@ $accessibility = [
 ];
 
 $md .= sprintf(
-    '| %s | %s | %s | %s |' . PHP_EOL,
+    '| %s | %s | %s |' . PHP_EOL . PHP_EOL,
     str_replace('|', '\\|', Helpers::type($property->type, $element, $language)),
     trim(implode('/', $accessibility), '/'),
-    $property->hasDefaultValue ? $property->defaultValue : '',
-    Helpers::linkElements($element, $property->declaringClass)
+    $property->hasDefaultValue ? $property->defaultValue : ''
 );
 
+$md .= sprintf('Declared in %s' . PHP_EOL . PHP_EOL, Helpers::linkElements($element, $property->declaringClass));
 $links = $this->render('_links', ['element' => $property]);
 
 if (!empty($links)):
     $md .= sprintf('#### Related' . PHP_EOL . PHP_EOL . '%s', $links);
 endif;
 
-echo $md;
+echo $md . '---' . PHP_EOL . PHP_EOL;
