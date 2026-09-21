@@ -2,7 +2,7 @@
 
 <div style="text-align:center">
 
-![logo](../assets/cod-php.svg)
+![logo](../public/cod-php.svg)
 
 </div>
 

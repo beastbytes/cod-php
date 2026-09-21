@@ -3,7 +3,7 @@ A Reflection based PHP API Documentation Generator
 
 <div style="text-align:center">
 
-![logo](docs/src/assets/cod-php.svg)
+![logo](docs/src/public/cod-php.svg)
 
 </div>
 

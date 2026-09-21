@@ -7,7 +7,7 @@ hero:
   text: "Reflection based<br>API Documentation Generator"
   tagline: Your project, Your documentation, Your way
   image:
-    src: /assets/cod-php.svg
+    src: /cod-php.svg
     alt: CodPhp
   actions:
     - theme: brand
