@@ -1,6 +1,6 @@
 ---
 title: ClassElement
-lastUpdated: 2026-09-21 13:27:17
+lastUpdated: 2026-09-21 20:39:45
 description: Represents a Class structural element.
 head:
   - - meta

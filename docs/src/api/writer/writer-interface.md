@@ -1,6 +1,6 @@
 ---
 title: WriterInterface
-lastUpdated: 2026-09-21 13:27:17
+lastUpdated: 2026-09-21 20:39:44
 description: An interface for Writer classes.
 head:
   - - meta

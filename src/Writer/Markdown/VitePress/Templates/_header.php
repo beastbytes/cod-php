@@ -14,7 +14,6 @@ use BeastBytes\CodPhp\Writer\Writer;
  * @var Writer $this
  */
 
-$x=1;
 echo sprintf(
     <<<FRONT_MATTER
     ---

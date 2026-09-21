@@ -1,6 +1,6 @@
 ---
 title: CompressionAndArchive
-lastUpdated: 2026-09-21 13:27:17
+lastUpdated: 2026-09-21 20:39:44
 description: Links to PHP Compression and Archive extensions documentation.
 head:
   - - meta

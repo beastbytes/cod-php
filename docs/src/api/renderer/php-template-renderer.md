@@ -1,6 +1,6 @@
 ---
 title: PhpTemplateRenderer
-lastUpdated: 2026-09-21 13:27:17
+lastUpdated: 2026-09-21 20:39:45
 description: Renders PHP templates.
 head:
   - - meta

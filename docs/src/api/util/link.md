@@ -1,6 +1,6 @@
 ---
 title: Link
-lastUpdated: 2026-09-21 13:27:17
+lastUpdated: 2026-09-21 20:39:45
 description: Immutable data object that normalises phpDocumentor Link and See tags.
 head:
   - - meta

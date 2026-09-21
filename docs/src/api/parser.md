@@ -1,6 +1,6 @@
 ---
 title: Parser
-lastUpdated: 2026-09-21 13:27:17
+lastUpdated: 2026-09-21 20:39:44
 description: Creates an array of ObjectElements from the given files.
 head:
   - - meta

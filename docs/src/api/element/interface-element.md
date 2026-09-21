@@ -1,6 +1,6 @@
 ---
 title: InterfaceElement
-lastUpdated: 2026-09-21 13:27:17
+lastUpdated: 2026-09-21 20:39:45
 description: Represents an Interface structural element.
 head:
   - - meta

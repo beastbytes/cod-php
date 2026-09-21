@@ -1,6 +1,6 @@
 ---
 title: ModifierTrait
-lastUpdated: 2026-09-21 13:27:17
+lastUpdated: 2026-09-21 20:39:45
 description: Provides element modifiers, e.g. visibility, readonly, static, etc.
 head:
   - - meta

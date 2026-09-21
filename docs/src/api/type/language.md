@@ -1,6 +1,6 @@
 ---
 title: Language
-lastUpdated: 2026-09-21 13:27:17
+lastUpdated: 2026-09-21 20:39:44
 description: Language codes for use when generating links to PHP types
 head:
   - - meta
