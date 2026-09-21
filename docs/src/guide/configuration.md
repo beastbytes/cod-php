@@ -153,7 +153,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 // CodPhp Configuration.
 return [
-    'baseUrl' => 'https://example.com/cod-php/api', // Base URL for source code links. Default - no source links generated
+    'baseUrl' => 'https://github.com/beastbytes/cod-php/tree/master/src', // Base URL for source code links. Default - no source links generated
     'errorLevel' => null, // Reporting level. Default: ErrorLevel::Error
     'exclude' => null, // Directories to ignore. Default ['./tests/**', './vendor/**']
     'inheritance' => InheritanceLevel::Namespace, // Level of Inheritance to show. Default Inheritance::All
