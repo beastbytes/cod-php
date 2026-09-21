@@ -78,6 +78,8 @@ final class CodPhp extends Command
     private const string WRITER = Writer::class;
 
     /**
+     * Run the Symfony console command.
+     *
      * @param InputInterface $input
      * @param OutputInterface $output
      * @param string|null $namespace Namespace containing source files.
