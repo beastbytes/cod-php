@@ -43,6 +43,7 @@ enum PhpType: string
     case FiberError = 'https://www.php.net/manual/{lang}/class.fibererror.php';
     case ParseError = 'https://www.php.net/manual/{lang}/class.parseerror.php';
     case RequestParseBodyException = 'https://www.php.net/manual/{lang}/class.requestparsebodyexception.php';
+    case Throwable = 'https://www.php.net/manual/en/class.throwable.php';
     case TypeError = 'https://www.php.net/manual/{lang}/class.typeerror.php';
     case UnhandledMatchError = 'https://www.php.net/manual/{lang}/class.unhandledmatcherror.php';
     case ValueError = 'https://www.php.net/manual/{lang}/class.valueerror.php';
