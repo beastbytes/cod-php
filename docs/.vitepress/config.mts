@@ -339,10 +339,6 @@ export default defineConfig({
                 link: "template-not-found-exception"
               },
               {
-                text: "TemplateRendererTrait",
-                link: "template-renderer-trait"
-              },
-              {
                 text: "Writer",
                 link: "writer"
               },
