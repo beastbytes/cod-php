@@ -49,24 +49,24 @@ final class Helpers
     public const string SYMBOL_VARIADIC = '...';
 
     private const string A = '<a %s>%s</a>';
-    private const string CONTAINER = '::: %s %s' . PHP_EOL . '%s' . PHP_EOL . ':::' . PHP_EOL;
+    private const string CONTAINER = '::: %s %s' . PHP_EOL . '%s' . PHP_EOL . ':::' . PHP_EOL . PHP_EOL;
     private const string DEFAULT_VALUE = ' = %s';
     private const string EXTENSIONS_NAMESPACE = 'BeastBytes\\CodPhp\\Type\\Extensions\\';
     private const string FRAGMENT = '#%s';
     private const string LANGUAGE = '{lang}';
     private const string MD_DOC = '%s.md';
     private const string MD_LINK = '[%s](%s)';
-    private const string MODIFIER = '<span class="php-doc-modifier">%s</span>';
+    private const string MODIFIER = '<span class="cod-php-modifier">%s</span>';
     private const string SOURCE_URL = '%s/%s.html';
     private const string TD_LIST = PHP_EOL. PHP_EOL . '%s' . PHP_EOL . PHP_EOL;
-    private const string TYPE = '<span class="php-doc-type">%s</span> $%s%s%s%s';
-    private const string VISIBILITY = '<span class="php-doc-visibility">%s</span>';
+    private const string TYPE = '<span class="cod-php-type">%s</span> $%s%s%s%s';
+    private const string VISIBILITY = '<span class="cod-php-visibility">%s</span>';
 
     /** @var array $extensions Extension Enums for typing */
     private static array $extensions = [];
 
     /**
-     * Generates an HTML <a/> tag.
+     * Generates an HTML `<a/>` tag.
      *
      * @param string $content Link content
      * @param string $href Link URL
@@ -226,8 +226,8 @@ final class Helpers
     /**
      * Returns the parameters for a method declaration.
      *
-     * @param MethodElement $method
-     * @param ObjectElement $element
+     * @param MethodElement $method The method.
+     * @param ObjectElement $element Method parent element.
      * @param Language $language PHP Manual language.
      * @return string Method declaration parameters
      * @throws ReflectionException
@@ -267,7 +267,7 @@ final class Helpers
     }
 
     /**
-     * Generate a list for inclusion in a <td> with items linked from the current element.
+     * Generate a list for inclusion in a `<td/>` with items linked from the current element.
      *
      * @param ObjectElement $element Current element.
      * @param string $property Property to list.
@@ -298,7 +298,7 @@ final class Helpers
     public static function toKebabCase(string $string): string
     {
         $string = preg_replace('/(?<=\p{L})(\p{Lu})/u', '-\1', $string);
-        
+
         if ($string === null) {
             throw new RuntimeException('`preg_replace` error');
         }
@@ -368,6 +368,8 @@ final class Helpers
         $epytPhp = new ReflectionEnum(PhpType::class);
 
         foreach ($types as &$type) {
+            $type = trim($type, '\\');
+
             if ($epytPhp->hasCase($type)) {
                 $href = $epytPhp->getCase($type)->getBackingValue();
 
