@@ -30,7 +30,7 @@ abstract class Element
     private static ?ContextFactory $contextFactory = null;
 
     /**
-     * Element copyright or null if the element does not have a `@copyright` tag.
+     * Element copyright or `null` if the element does not have a `@copyright` tag.
      *
      * @var ?string $copyright
      * @see Element::hasTag()
