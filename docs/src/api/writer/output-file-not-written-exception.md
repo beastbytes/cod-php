@@ -1,6 +1,6 @@
 ---
 title: OutputFileNotWrittenException
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Exception thrown if writing an output file fails.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `OutputFileNotWrittenException`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/output-file-not-written-exception.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Writer/OutputFileNotWrittenException.php">Source Code</a>
 
 Exception thrown if writing an output file fails.
 

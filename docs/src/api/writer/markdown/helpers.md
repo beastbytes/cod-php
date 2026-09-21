@@ -1,6 +1,6 @@
 ---
 title: Helpers
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Static helper functions for the writer.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `Helpers`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/helpers.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Writer/Markdown/Helpers.php">Source Code</a>
 
 Static helper functions for the writer.
 

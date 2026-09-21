@@ -1,6 +1,6 @@
 ---
 title: OtherBasicExtensions
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Links to PHP Other Basic extensions documentation.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `OtherBasicExtensions`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/other-basic-extensions.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/OtherBasicExtensions.php">Source Code</a>
 
 Links to PHP Other Basic extensions documentation.
 

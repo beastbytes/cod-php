@@ -1,6 +1,6 @@
 ---
 title: ImageProcessingAndGeneration
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Links to PHP Image Processing and Generation extensions documentation.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `ImageProcessingAndGeneration`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/image-processing-and-generation.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/ImageProcessingAndGeneration.php">Source Code</a>
 
 Links to PHP Image Processing and Generation extensions documentation.
 

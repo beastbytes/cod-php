@@ -1,6 +1,6 @@
 ---
 title: ErrorLevel
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Used to define the maximum error reporting level.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `ErrorLevel`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/error-level.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Error/ErrorLevel.php">Source Code</a>
 
 Used to define the maximum error reporting level.
 

@@ -1,6 +1,6 @@
 ---
 title: SearchEngine
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Links to PHP Search Engine extensions documentation.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `SearchEngine`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/search-engine.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/SearchEngine.php">Source Code</a>
 
 Links to PHP Search Engine extensions documentation.
 

@@ -1,6 +1,6 @@
 ---
 title: DeclaringClassTrait
-lastUpdated: 2026-09-21 20:39:45
+lastUpdated: 2026-09-21 21:00:19
 description: Provides the declaring class of an element.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # trait `DeclaringClassTrait`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/declaring-class-trait.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/DeclaringClassTrait.php">Source Code</a>
 
 Provides the declaring class of an element.
 

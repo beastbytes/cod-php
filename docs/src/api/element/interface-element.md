@@ -1,6 +1,6 @@
 ---
 title: InterfaceElement
-lastUpdated: 2026-09-21 20:39:45
+lastUpdated: 2026-09-21 21:00:19
 description: Represents an Interface structural element.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `InterfaceElement`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/interface-element.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/InterfaceElement.php">Source Code</a>
 
 Represents an Interface structural element.
 

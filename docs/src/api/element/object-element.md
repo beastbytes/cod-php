@@ -1,6 +1,6 @@
 ---
 title: ObjectElement
-lastUpdated: 2026-09-21 20:39:45
+lastUpdated: 2026-09-21 21:00:19
 description: Abstract class for object - class, enum, interface, and trait - structural elements.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">abstract</span> class `ObjectElement`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/object-element.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/ObjectElement.php">Source Code</a>
 
 Abstract class for object - class, enum, interface, and trait - structural elements.
 

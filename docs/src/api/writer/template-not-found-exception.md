@@ -1,6 +1,6 @@
 ---
 title: TemplateNotFoundException
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Exception thrown if a template cannot be found.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `TemplateNotFoundException`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/template-not-found-exception.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Writer/TemplateNotFoundException.php">Source Code</a>
 
 Exception thrown if a template cannot be found.
 

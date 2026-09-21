@@ -1,6 +1,6 @@
 ---
 title: Sessions
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Links to PHP Sessions extensions documentation.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `Sessions`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/sessions.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/Sessions.php">Source Code</a>
 
 Links to PHP Sessions extensions documentation.
 

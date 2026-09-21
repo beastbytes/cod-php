@@ -1,6 +1,6 @@
 ---
 title: Error
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Represents a structural element documentation error.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> <span class="cod-php-modifier">readonly</span> class `Error`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/error.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Error/Error.php">Source Code</a>
 
 Represents a structural element documentation error.
 

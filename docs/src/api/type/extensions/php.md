@@ -1,6 +1,6 @@
 ---
 title: Php
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Links to PHP PHP extensions documentation.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `Php`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/php.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/Php.php">Source Code</a>
 
 Links to PHP PHP extensions documentation.
 

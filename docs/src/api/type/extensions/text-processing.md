@@ -1,6 +1,6 @@
 ---
 title: TextProcessing
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Links to PHP Text Processing extensions documentation.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `TextProcessing`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/text-processing.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/TextProcessing.php">Source Code</a>
 
 Links to PHP Text Processing extensions documentation.
 

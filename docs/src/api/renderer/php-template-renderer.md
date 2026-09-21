@@ -1,6 +1,6 @@
 ---
 title: PhpTemplateRenderer
-lastUpdated: 2026-09-21 20:39:45
+lastUpdated: 2026-09-21 21:00:19
 description: Renders PHP templates.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `PhpTemplateRenderer`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/php-template-renderer.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Renderer/PhpTemplateRenderer.php">Source Code</a>
 
 Renders PHP templates.
 

@@ -1,6 +1,6 @@
 ---
 title: HumanLanguage
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Links to PHP Human Language extensions documentation.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `HumanLanguage`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/human-language.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/HumanLanguage.php">Source Code</a>
 
 Links to PHP Human Language extensions documentation.
 

@@ -1,6 +1,6 @@
 ---
 title: VariableAndType
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Links to PHP Variable and Type extensions documentation.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `VariableAndType`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/variable-and-type.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/VariableAndType.php">Source Code</a>
 
 Links to PHP Variable and Type extensions documentation.
 

@@ -1,6 +1,6 @@
 ---
 title: FileSystem
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Links to PHP File System extensions documentation.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `FileSystem`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/file-system.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/FileSystem.php">Source Code</a>
 
 Links to PHP File System extensions documentation.
 

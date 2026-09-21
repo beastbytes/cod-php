@@ -1,6 +1,6 @@
 ---
 title: CodPhp
-lastUpdated: 2026-09-21 20:39:45
+lastUpdated: 2026-09-21 21:00:19
 description: CodPhp Symfony Console command.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `CodPhp`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/cod-php.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Command/CodPhp.php">Source Code</a>
 
 CodPhp Symfony Console command.
 

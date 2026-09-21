@@ -1,6 +1,6 @@
 ---
 title: Config
-lastUpdated: 2026-09-21 20:39:45
+lastUpdated: 2026-09-21 21:00:19
 description: Configuration object
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `Config`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/config.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Config.php">Source Code</a>
 
 Configuration object
 

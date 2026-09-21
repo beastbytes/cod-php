@@ -1,6 +1,6 @@
 ---
 title: EnumElement
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Represents an Enum structural element.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `EnumElement`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/enum-element.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/EnumElement.php">Source Code</a>
 
 Represents an Enum structural element.
 

@@ -1,6 +1,6 @@
 ---
 title: Writer
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Writer that generates documentation in Markdown format and configuration for use with the VitePress static site generator.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `Writer`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/writer.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Writer/Markdown/VitePress/Writer.php">Source Code</a>
 
 Writer that generates documentation in Markdown format and configuration for use with the VitePress static site generator.
 

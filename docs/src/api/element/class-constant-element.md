@@ -1,6 +1,6 @@
 ---
 title: ClassConstantElement
-lastUpdated: 2026-09-21 20:39:45
+lastUpdated: 2026-09-21 21:00:19
 description: Represents a Class Constant structural element.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `ClassConstantElement`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/class-constant-element.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/ClassConstantElement.php">Source Code</a>
 
 Represents a Class Constant structural element.
 

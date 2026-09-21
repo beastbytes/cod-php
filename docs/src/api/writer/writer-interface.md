@@ -1,6 +1,6 @@
 ---
 title: WriterInterface
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: An interface for Writer classes.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # interface `WriterInterface`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/writer-interface.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Writer/WriterInterface.php">Source Code</a>
 
 An interface for Writer classes.
 

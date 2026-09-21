@@ -1,6 +1,6 @@
 ---
 title: TemplateRendererInterface
-lastUpdated: 2026-09-21 20:39:45
+lastUpdated: 2026-09-21 21:00:19
 description: Interface for template renderers.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # interface `TemplateRendererInterface`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/template-renderer-interface.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Renderer/TemplateRendererInterface.php">Source Code</a>
 
 Interface for template renderers.
 

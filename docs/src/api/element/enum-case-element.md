@@ -1,6 +1,6 @@
 ---
 title: EnumCaseElement
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Represents an EnumBackedCase or EnumUnitCase structural element.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `EnumCaseElement`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/enum-case-element.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/EnumCaseElement.php">Source Code</a>
 
 Represents an EnumBackedCase or EnumUnitCase structural element.
 

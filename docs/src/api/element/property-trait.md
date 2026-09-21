@@ -1,6 +1,6 @@
 ---
 title: PropertyTrait
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Provides information about and the properties of an element.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # trait `PropertyTrait`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/property-trait.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/PropertyTrait.php">Source Code</a>
 
 Provides information about and the properties of an element.
 

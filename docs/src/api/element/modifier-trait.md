@@ -1,6 +1,6 @@
 ---
 title: ModifierTrait
-lastUpdated: 2026-09-21 20:39:45
+lastUpdated: 2026-09-21 21:00:19
 description: Provides element modifiers, e.g. visibility, readonly, static, etc.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # trait `ModifierTrait`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/modifier-trait.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/ModifierTrait.php">Source Code</a>
 
 Provides element modifiers, e.g. visibility, readonly, static, etc.
 

@@ -1,6 +1,6 @@
 ---
 title: PropertyElement
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Represents a Property structural element.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">final</span> class `PropertyElement`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/property-element.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/PropertyElement.php">Source Code</a>
 
 Represents a Property structural element.
 

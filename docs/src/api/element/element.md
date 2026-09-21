@@ -1,6 +1,6 @@
 ---
 title: Element
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Base class for all structural elements.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # <span class="cod-php-modifier">abstract</span> class `Element`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/element.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/Element.php">Source Code</a>
 
 Base class for all structural elements.
 

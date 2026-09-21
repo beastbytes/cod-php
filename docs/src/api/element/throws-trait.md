@@ -1,6 +1,6 @@
 ---
 title: ThrowsTrait
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Provides information about and the exceptions thrown by an element.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # trait `ThrowsTrait`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/throws-trait.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/ThrowsTrait.php">Source Code</a>
 
 Provides information about and the exceptions thrown by an element.
 

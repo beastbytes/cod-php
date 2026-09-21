@@ -1,6 +1,6 @@
 ---
 title: NonTextMime
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Links to PHP Non-Text Mime extensions documentation.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `NonTextMime`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/non-text-mime.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/NonTextMime.php">Source Code</a>
 
 Links to PHP Non-Text Mime extensions documentation.
 

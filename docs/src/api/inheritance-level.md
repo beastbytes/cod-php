@@ -1,6 +1,6 @@
 ---
 title: InheritanceLevel
-lastUpdated: 2026-09-21 20:39:45
+lastUpdated: 2026-09-21 21:00:19
 description: Inheritance level of methods and properties included in elements.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `InheritanceLevel`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/inheritance-level.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/InheritanceLevel.php">Source Code</a>
 
 Inheritance level of methods and properties included in elements.
 

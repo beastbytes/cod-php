@@ -1,6 +1,6 @@
 ---
 title: Gui
-lastUpdated: 2026-09-21 20:39:44
+lastUpdated: 2026-09-21 21:00:19
 description: Links to PHP Gui extensions documentation.
 head:
   - - meta
@@ -13,7 +13,7 @@ head:
 
 # enum `Gui`
 
-<a  href="https://github.com/beastbytes/cod-php/tree/master/src/gui.html">Source Code</a>
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/Gui.php">Source Code</a>
 
 Links to PHP Gui extensions documentation.
 
