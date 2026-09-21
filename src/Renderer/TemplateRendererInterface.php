@@ -9,7 +9,7 @@ use BeastBytes\CodPhp\Writer\WriterInterface;
 /** Interface for template renderers. */
 interface TemplateRendererInterface
 {
-    /** @var string The file extension used by the renderer. */
+    /** @var string Template file extension used by the renderer. */
     public string $extension { get; }
 
     /**

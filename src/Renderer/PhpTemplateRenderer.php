@@ -23,7 +23,7 @@ final class PhpTemplateRenderer implements TemplateRendererInterface
     private const string EXTENSION = 'php';
     private const string RENDER_FAILED = 'Failed to render `%s` with `%s`';
 
-    /** @var string File extension of templates rendered. */
+    /** @var string Template file extension. */
     public string $extension {
         get => self::EXTENSION;
     }
