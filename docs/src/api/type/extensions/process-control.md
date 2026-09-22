@@ -1,6 +1,6 @@
 ---
 title: ProcessControl
-lastUpdated: 2026-09-21 21:07:01
+lastUpdated: 2026-09-22 11:35:53
 description: Links to PHP Process Control extensions documentation.
 head:
   - - meta

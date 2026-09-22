@@ -1,6 +1,6 @@
 ---
 title: Collection
-lastUpdated: 2026-09-21 21:07:01
+lastUpdated: 2026-09-22 11:35:53
 description: Collection of Error objects.
 head:
   - - meta

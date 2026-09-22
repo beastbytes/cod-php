@@ -1,6 +1,6 @@
 ---
 title: TemplateRendererInterface
-lastUpdated: 2026-09-21 21:07:02
+lastUpdated: 2026-09-22 11:35:53
 description: Interface for template renderers.
 head:
   - - meta

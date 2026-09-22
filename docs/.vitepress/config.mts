@@ -19,7 +19,7 @@ export default defineConfig({
   description: 'Reflection based API Document Generator',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: './src/assests/cod-php.svg',
+    logo: './src/public/cod-php.svg',
     siteTitle: 'CodPhp',
     nav: [
       {
@@ -127,6 +127,10 @@ export default defineConfig({
               {
                 text: "InterfaceElement",
                 link: "interface-element"
+              },
+              {
+                text: "InvalidTagException",
+                link: "invalid-tag-exception"
               },
               {
                 text: "MethodElement",
