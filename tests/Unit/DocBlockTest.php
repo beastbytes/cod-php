@@ -1,7 +1,10 @@
 <?php
 
 use BeastBytes\CodPhp\Element\ClassElement;
+use BeastBytes\CodPhp\Element\InvalidTagException;
+use BeastBytes\CodPhp\InheritanceLevel;
 use BeastBytes\CodPhp\Tests\Support\Files\Classes\TestClass;
+use BeastBytes\CodPhp\Tests\Support\Files\Classes\TestClass7;
 use phpDocumentor\Reflection\DocBlock\Tags\Deprecated;
 use phpDocumentor\Reflection\DocBlock\Tags\Since;
 use phpDocumentor\Reflection\DocBlock\Tags\Version;
@@ -32,3 +35,15 @@ test('Class Tags', function () {
         ->and((string) $element->deprecationNotice)->toBe('99.0.99 Test deprecation notice')
     ;
 });
+
+test('Invalid Parameter Tag', function () {
+    $element = new ClassElement(new ReflectionClass(TestClass7::class));
+    $element->rootNamespace = __NAMESPACE__;
+    $element->inheritanceLevel = InheritanceLevel::Namespace;
+
+    $methods = $element->methods;
+    $method = array_pop($methods);
+    $method->parameters;
+})
+    ->throws(InvalidTagException::class)
+;
