@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace BeastBytes\CodPhp\Element;
 
-use phpDocumentor\Reflection\DocBlock\Tags\Throws;
+use phpDocumentor\Reflection\DocBlock\Tags\InvalidTag;
+use phpDocumentor\Reflection\DocBlock\Tags\Param;
 use ReflectionParameter;
 use ReflectionType;
-use RuntimeException;
 
 /** Represents a Method structural element. */
 final class MethodElement extends Element
@@ -15,6 +15,8 @@ final class MethodElement extends Element
     use DeclaringClassTrait;
     use ModifierTrait;
     use ThrowsTrait;
+
+    private const string INVALID_TAG_EXCEPTION = 'Tag content: %s';
 
     /** @var bool $hasParameters `true` if the method has parameters, `false` if not. */
     public bool $hasParameters {
@@ -79,7 +81,12 @@ final class MethodElement extends Element
     private function parameterDescription(ReflectionParameter $parameter): string
     {
         if ($this->hasDocBlock) {
+            /** @var InvalidTag|Param $tag */
             foreach ($this->docBlock->getTagsByName('param') as $tag) {
+                if ($tag instanceof InvalidTag) {
+                    throw new InvalidTagException(sprintf(self::INVALID_TAG_EXCEPTION, (string) $tag));
+                }
+
                 if ($tag->getVariableName() === $parameter->getName()) {
                     return $tag->getDescription()->render();
                 }
