@@ -38,6 +38,7 @@
       "BeastBytes\\CodPhp\\Tests\\": "tests"
     }
   },
+  "bin": ["bin/cod-php"],
   "config": {
     "sort-packages": true,
     "allow-plugins": {
