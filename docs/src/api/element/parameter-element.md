@@ -1,6 +1,6 @@
 ---
 title: ParameterElement
-lastUpdated: 2026-09-23 10:29:06
+lastUpdated: 2026-09-23 18:38:54
 description: Represents a Parameter structural element.
 head:
   - - meta

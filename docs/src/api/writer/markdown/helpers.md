@@ -1,6 +1,6 @@
 ---
 title: Helpers
-lastUpdated: 2026-09-23 10:29:05
+lastUpdated: 2026-09-23 18:38:53
 description: Static helper functions for the writer.
 head:
   - - meta
@@ -131,7 +131,7 @@ Declared in BeastBytes\CodPhp\Writer\Markdown\Helpers
 ### tdList()
 Generate a list for inclusion in a `<td/>` with items linked from the current element.
 
-<table><tbody><tr><td colspan="3"><span class="cod-php-visibility">public</span> <span class="cod-php-modifier">static</span>  function tdList(<span class="cod-php-type"><a  href="../../Element/ObjectElement.md">BeastBytes\CodPhp\Element\ObjectElement</a></span> $element, <span class="cod-php-type"><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></span> $property): <span class="type"><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></span></td></tr><tr><td>$element</td><td><a  href="../../Element/ObjectElement.md">BeastBytes\CodPhp\Element\ObjectElement</a></td><td>Current element.</td></tr><tr><td>$property</td><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td><td>Property to list.</td></tr><tr><td>return</td><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td><td>List of items.</td></tr></tbody></table>
+<table><tbody><tr><td colspan="3"><span class="cod-php-visibility">public</span> <span class="cod-php-modifier">static</span>  function tdList(<span class="cod-php-type"><a  href="../../Element/ObjectElement.md">BeastBytes\CodPhp\Element\ObjectElement</a></span> $element, <span class="cod-php-type"><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></span> $property, <span class="cod-php-type"><a  href="../../Type/Language.md">BeastBytes\CodPhp\Type\Language</a>|<a  href="https://www.php.net/manual/en/language.types.null.php">null</a></span> $language = null): <span class="type"><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></span></td></tr><tr><td>$element</td><td><a  href="../../Element/ObjectElement.md">BeastBytes\CodPhp\Element\ObjectElement</a></td><td>Current element.</td></tr><tr><td>$property</td><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td><td>Property to list.</td></tr><tr><td>$language</td><td><a  href="../../Type/Language.md">BeastBytes\CodPhp\Type\Language</a>|<a  href="https://www.php.net/manual/en/language.types.null.php">null</a></td><td>PHP Manual language.</td></tr><tr><td>return</td><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td><td>List of items.</td></tr></tbody></table>
 
 Declared in BeastBytes\CodPhp\Writer\Markdown\Helpers
 

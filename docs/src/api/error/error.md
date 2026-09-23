@@ -1,6 +1,6 @@
 ---
 title: Error
-lastUpdated: 2026-09-23 10:29:05
+lastUpdated: 2026-09-23 18:38:53
 description: Represents a structural element documentation error.
 head:
   - - meta
@@ -23,7 +23,7 @@ BeastBytes\CodPhp\Error\Error
 
 </td></tr><tr><th>Implements</th><td>
 
-JsonSerializable
+[JsonSerializable](https://www.php.net/manual/en/class.jsonserializable.php)
 
 </td></tr></tbody></table>
 

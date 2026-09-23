@@ -1,6 +1,6 @@
 ---
 title: OutputFileNotWrittenException
-lastUpdated: 2026-09-23 10:29:05
+lastUpdated: 2026-09-23 18:38:53
 description: Exception thrown if writing an output file fails.
 head:
   - - meta
@@ -19,11 +19,11 @@ Exception thrown if writing an output file fails.
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp\Writer</td></tr><tr><th>Inheritance</th><td>
 
-BeastBytes\CodPhp\Writer\OutputFileNotWrittenException<br>RuntimeException<br>Exception
+BeastBytes\CodPhp\Writer\OutputFileNotWrittenException<br>RuntimeException<br>[Exception](https://www.php.net/manual/en/class.exception.php)
 
 </td></tr><tr><th>Implements</th><td>
 
-Stringable<br>Throwable
+[Stringable](https://www.php.net/manual/en/class.stringable.php)<br>[Throwable](https://www.php.net/manual/en/class.throwable.php)
 
 </td></tr></tbody></table>
 

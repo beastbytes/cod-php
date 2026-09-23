@@ -1,6 +1,6 @@
 ---
 title: CodPhp
-lastUpdated: 2026-09-23 12:59:37
+lastUpdated: 2026-09-23 18:38:54
 description: CodPhp application runner for Symfony Console
 head:
   - - meta

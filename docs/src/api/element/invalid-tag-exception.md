@@ -1,6 +1,6 @@
 ---
 title: InvalidTagException
-lastUpdated: 2026-09-23 10:29:06
+lastUpdated: 2026-09-23 18:38:54
 description: 
 head:
   - - meta
@@ -17,11 +17,11 @@ head:
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp\Element</td></tr><tr><th>Inheritance</th><td>
 
-BeastBytes\CodPhp\Element\InvalidTagException<br>RuntimeException<br>Exception
+BeastBytes\CodPhp\Element\InvalidTagException<br>RuntimeException<br>[Exception](https://www.php.net/manual/en/class.exception.php)
 
 </td></tr><tr><th>Implements</th><td>
 
-Stringable<br>Throwable
+[Stringable](https://www.php.net/manual/en/class.stringable.php)<br>[Throwable](https://www.php.net/manual/en/class.throwable.php)
 
 </td></tr></tbody></table>
 
