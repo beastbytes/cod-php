@@ -47,11 +47,11 @@ if ($element->canHaveMethodTag && $element->hasTag('method')):
         $md .= sprintf(
             '| %s<span class="type">%s</span> %s%s(%s) | %s |',
             $methodTag->isStatic() ? 'static ' : '',
-            str_replace('|', '\\|', Helpers::type($methodTag->getReturnType(), $element, $language)),
+            Helpers::sanitise(Helpers::type($methodTag->getReturnType(), $element, $language), true),
             $methodTag->returnsReference() ? '&' : '',
             $methodTag->getName(),
             Helpers::parameters($methodTag, $element, $language),
-            $methodTag->getDescription()
+            Helpers::sanitise((string) $methodTag->getDescription(), true)
         );
     endforeach;
 

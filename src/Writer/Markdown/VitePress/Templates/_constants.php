@@ -28,8 +28,8 @@ if ($element->hasConstants):
         $md .= sprintf(
             '| %s | %s | %s | %s |' . PHP_EOL,
             $constant->name,
-            str_replace('|', '\\|', $constant->value),
-            $constant->summary,
+            Helpers::sanitise($constant->value, true),
+            Helpers::sanitise((string) $constant->summary, true),
             Helpers::linkElements($element, $constant->declaringClass)
         );
     endforeach;

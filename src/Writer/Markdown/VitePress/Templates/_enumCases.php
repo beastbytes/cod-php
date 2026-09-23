@@ -5,6 +5,7 @@ declare(strict_types=1);
 use BeastBytes\CodPhp\Element\EnumElement;
 use BeastBytes\CodPhp\Error\ErrorLevel;
 use BeastBytes\CodPhp\Type\Language;
+use BeastBytes\CodPhp\Writer\Markdown\Helpers;
 use BeastBytes\CodPhp\Writer\Writer;
 
 /**
@@ -26,7 +27,7 @@ if ($element->isBacked):
             '| %s | %s | %s |' . PHP_EOL,
             $case->name,
             $case->value,
-            $case->summary
+            Helpers::sanitise((string) $case->summary, true)
         );
     endforeach;
 else:
@@ -36,7 +37,7 @@ else:
         $md .= sprintf(
             '| %s | %s |' . PHP_EOL,
             $case->name,
-            $case->summary
+            Helpers::sanitise((string) $case->summary, true)
         );
     endforeach;
 endif;

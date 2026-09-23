@@ -49,9 +49,9 @@ if ($element->canHavePropertyTag):
 
             $md .= sprintf(
                 '| <span class="type">%s</span> $%s | %s |',
-                str_replace('|', '\\|', Helpers::type($propertyTag->getType(), $element, $language)),
+                Helpers::sanitise(Helpers::type($propertyTag->getType(), $element, $language), true),
                 $propertyTag->getVariableName(),
-                $propertyTag->getDescription()
+                Helpers::sanitise((string) $propertyTag->getDescription(), true)
             );
         endforeach;
 
@@ -70,9 +70,9 @@ if ($element->canHavePropertyTag):
 
             $md .= sprintf(
                 '| <span class="type">%s</span> $%s | %s |',
-                str_replace('|', '\\|', Helpers::type($propertyTag->getType(), $element, $language)),
+                Helpers::sanitise(Helpers::type($propertyTag->getType(), $element, $language), true),
                 $propertyTag->getVariableName(),
-                $propertyTag->getDescription()
+                Helpers::sanitise((string) $propertyTag->getDescription(), true)
             );
         endforeach;
 
@@ -91,9 +91,9 @@ if ($element->canHavePropertyTag):
 
             $md .= sprintf(
                 '| <span class="type">%s</span> $%s | %s |',
-                str_replace('|', '\\|', Helpers::type($propertyTag->getType(), $element, $language)),
+                Helpers::sanitise(Helpers::type($propertyTag->getType(), $element, $language), true),
                 $propertyTag->getVariableName(),
-                $propertyTag->getDescription()
+                Helpers::sanitise((string) $propertyTag->getDescription(), true)
             );
         endforeach;
 

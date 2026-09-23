@@ -80,7 +80,7 @@ if ($method->hasParameters):
             '<tr><td>$%s</td><td>%s</td><td>%s</td></tr>',
             $name,
             Helpers::type($parameter->type, $element, $language),
-            $parameter->description
+            Helpers::sanitise($parameter->description)
         );
     endforeach;
 endif;
@@ -89,7 +89,7 @@ if (!$method->isConstructor && !$method->isDestructor):
     $md .= sprintf(
         '<tr><td>return</td><td>%s</td><td>%s</td></tr>',
         Helpers::type($method->returnType, $element, $language),
-        $method->returnValueDescription
+        Helpers::sanitise($method->returnValueDescription)
     );
 endif;
 
@@ -98,7 +98,7 @@ if ($method->throwsException):
         $md .= sprintf(
             '<tr><td>throws</td><td>%s</td><td>%s</td></tr>',
             Helpers::type($throws->getType(), $element, $language),
-            $throws->getDescription()
+            Helpers::sanitise((string) $throws->getDescription())
         );
     endforeach;
 endif;

@@ -28,8 +28,7 @@ if (is_string($baseUrl)):
 endif;
 
 if ($element->hasSummary):
-    $md .= $element->summary . PHP_EOL . PHP_EOL;
-    $md .= $element->description . PHP_EOL . PHP_EOL;
+    $md .= Helpers::sanitise($element->summary) . PHP_EOL . PHP_EOL;
 else:
     $md .= Helpers::error(
         ErrorCollection::addError('No Summary', $element),
@@ -38,7 +37,7 @@ else:
 endif;
 
 if ($element->hasDescription):
-    $md .= $element->description . PHP_EOL . PHP_EOL;
+    $md .= Helpers::sanitise($element->description) . PHP_EOL . PHP_EOL;
 else:
     $md .= Helpers::error(
         ErrorCollection::addWarning('No Description', $element),
