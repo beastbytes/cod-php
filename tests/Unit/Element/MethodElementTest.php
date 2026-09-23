@@ -37,6 +37,14 @@ dataset('elements', function () {
                 'hasParameters' => true,
                 'parameters' => ['a', 'b'],
             ],
+            '__toString' => [
+                'isConstructor' => false,
+                'isDestructor' => false,
+                'hasReturnType' => true,
+                'returnType' => 'string',
+                'hasParameters' => false,
+                'parameters' => [],
+            ],
             'add' => [
                 'isConstructor' => false,
                 'isDestructor' => false,
@@ -76,7 +84,7 @@ dataset('elements', function () {
                 'returnType' => 'void',
                 'hasParameters' => true,
                 'parameters' => ['string'],
-            ]
+            ],
         };
 
         yield $method->name => [$method, $expected];

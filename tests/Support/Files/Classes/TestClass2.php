@@ -5,8 +5,9 @@ declare(strict_types=1);
 namespace BeastBytes\CodPhp\Tests\Support\Files\Classes;
 
 use RuntimeException;
+use Stringable;
 
-class TestClass2 extends TestClass3
+class TestClass2 extends TestClass3 implements Stringable
 {
     private string $string;
 
@@ -41,5 +42,10 @@ class TestClass2 extends TestClass3
     public function setter(string $string): void
     {
         $this->string = $string;
+    }
+
+    public function __toString(): string
+    {
+        return '';
     }
 }
