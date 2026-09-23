@@ -1,6 +1,6 @@
 ---
 title: Element
-lastUpdated: 2026-09-22 11:35:53
+lastUpdated: 2026-09-23 10:29:06
 description: Base class for all structural elements.
 head:
   - - meta
@@ -16,8 +16,6 @@ head:
 <a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/Element.php">Source Code</a>
 
 Base class for all structural elements.
-
-Provides properties and methods common to all structural elements.
 
 Provides properties and methods common to all structural elements.
 

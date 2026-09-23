@@ -1,6 +1,6 @@
 ---
 title: ErrorLevel
-lastUpdated: 2026-09-22 11:35:53
+lastUpdated: 2026-09-23 10:29:05
 description: Used to define the maximum error reporting level.
 head:
   - - meta
@@ -16,8 +16,6 @@ head:
 <a  href="https://github.com/beastbytes/cod-php/blob/master/src/Error/ErrorLevel.php">Source Code</a>
 
 Used to define the maximum error reporting level.
-
-
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp\Error</td></tr><tr><th>Backing Type</th><td><a  href="https://www.php.net/manual/en/language.types.integer.php">int</a></td></tr></tbody></table>
 

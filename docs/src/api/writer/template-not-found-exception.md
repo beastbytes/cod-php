@@ -1,6 +1,6 @@
 ---
 title: TemplateNotFoundException
-lastUpdated: 2026-09-22 11:35:53
+lastUpdated: 2026-09-23 10:29:05
 description: Exception thrown if a template cannot be found.
 head:
   - - meta
@@ -16,8 +16,6 @@ head:
 <a  href="https://github.com/beastbytes/cod-php/blob/master/src/Writer/TemplateNotFoundException.php">Source Code</a>
 
 Exception thrown if a template cannot be found.
-
-
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp\Writer</td></tr><tr><th>Inheritance</th><td>
 

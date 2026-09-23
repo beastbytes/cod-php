@@ -1,6 +1,6 @@
 ---
 title: Parser
-lastUpdated: 2026-09-22 11:35:53
+lastUpdated: 2026-09-23 10:29:05
 description: Creates an array of ObjectElements from the given files.
 head:
   - - meta
@@ -16,8 +16,6 @@ head:
 <a  href="https://github.com/beastbytes/cod-php/blob/master/src/Parser.php">Source Code</a>
 
 Creates an array of ObjectElements from the given files.
-
-
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp</td></tr><tr><th>Inheritance</th><td>
 

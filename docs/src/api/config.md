@@ -1,6 +1,6 @@
 ---
 title: Config
-lastUpdated: 2026-09-22 11:35:53
+lastUpdated: 2026-09-23 10:29:06
 description: Configuration object
 head:
   - - meta
@@ -16,8 +16,6 @@ head:
 <a  href="https://github.com/beastbytes/cod-php/blob/master/src/Config.php">Source Code</a>
 
 Configuration object
-
-
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp</td></tr><tr><th>Inheritance</th><td>
 

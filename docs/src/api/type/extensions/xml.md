@@ -1,6 +1,6 @@
 ---
 title: Xml
-lastUpdated: 2026-09-22 11:35:53
+lastUpdated: 2026-09-23 10:29:05
 description: Links to PHP XML extensions documentation.
 head:
   - - meta
@@ -16,8 +16,6 @@ head:
 <a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Extensions/Xml.php">Source Code</a>
 
 Links to PHP XML extensions documentation.
-
-
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp\Type\Extensions</td></tr><tr><th>Backing Type</th><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td></tr></tbody></table>
 

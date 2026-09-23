@@ -1,6 +1,6 @@
 ---
 title: Helpers
-lastUpdated: 2026-09-22 11:35:53
+lastUpdated: 2026-09-23 10:29:05
 description: Static helper functions for the writer.
 head:
   - - meta
@@ -17,8 +17,6 @@ head:
 
 Static helper functions for the writer.
 
-
-
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp\Writer\Markdown</td></tr><tr><th>Inheritance</th><td>
 
 BeastBytes\CodPhp\Writer\Markdown\Helpers
@@ -29,10 +27,10 @@ BeastBytes\CodPhp\Writer\Markdown\Helpers
 
 | Name | Value | Description | Defined In |
 |-|-|-|-|
-| SYMBOL_INTERSECTION | '&' |  | BeastBytes\CodPhp\Writer\Markdown\Helpers |
-| SYMBOL_REFERENCE | '&' |  | BeastBytes\CodPhp\Writer\Markdown\Helpers |
-| SYMBOL_UNION | '\|' |  | BeastBytes\CodPhp\Writer\Markdown\Helpers |
-| SYMBOL_VARIADIC | '...' |  | BeastBytes\CodPhp\Writer\Markdown\Helpers |
+| SYMBOL_INTERSECTION | &#039;&amp;&#039; |  | BeastBytes\CodPhp\Writer\Markdown\Helpers |
+| SYMBOL_REFERENCE | &#039;&amp;&#039; |  | BeastBytes\CodPhp\Writer\Markdown\Helpers |
+| SYMBOL_UNION | &#039;\|&#039; |  | BeastBytes\CodPhp\Writer\Markdown\Helpers |
+| SYMBOL_VARIADIC | &#039;...&#039; |  | BeastBytes\CodPhp\Writer\Markdown\Helpers |
 
 ## Methods
 
@@ -102,6 +100,18 @@ Declared in BeastBytes\CodPhp\Writer\Markdown\Helpers
 Returns the parameters for a method declaration.
 
 <table><tbody><tr><td colspan="3"><span class="cod-php-visibility">public</span> <span class="cod-php-modifier">static</span>  function parameters(<span class="cod-php-type"><a  href="../../Element/MethodElement.md">BeastBytes\CodPhp\Element\MethodElement</a></span> $method, <span class="cod-php-type"><a  href="../../Element/ObjectElement.md">BeastBytes\CodPhp\Element\ObjectElement</a></span> $element, <span class="cod-php-type"><a  href="../../Type/Language.md">BeastBytes\CodPhp\Type\Language</a></span> $language): <span class="type"><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></span></td></tr><tr><td>$method</td><td><a  href="../../Element/MethodElement.md">BeastBytes\CodPhp\Element\MethodElement</a></td><td>The method.</td></tr><tr><td>$element</td><td><a  href="../../Element/ObjectElement.md">BeastBytes\CodPhp\Element\ObjectElement</a></td><td>Method parent element.</td></tr><tr><td>$language</td><td><a  href="../../Type/Language.md">BeastBytes\CodPhp\Type\Language</a></td><td>PHP Manual language.</td></tr><tr><td>return</td><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td><td>Method declaration parameters</td></tr><tr><td>throws</td><td><a  href="https://https://www.php.net/manual/en/class.reflectionexception.php">ReflectionException</a></td><td></td></tr></tbody></table>
+
+Declared in BeastBytes\CodPhp\Writer\Markdown\Helpers
+
+
+---
+
+### sanitise()
+Sanitise a string for HTML, and optionally in a Markdown table.
+
+This function also resolves inline `@link` tags.
+
+<table><tbody><tr><td colspan="3"><span class="cod-php-visibility">public</span> <span class="cod-php-modifier">static</span>  function sanitise(<span class="cod-php-type"><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></span> $string, <span class="cod-php-type"><a  href="https://www.php.net/manual/en/language.types.boolean.php">bool</a></span> $mdt = false): <span class="type"><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></span></td></tr><tr><td>$string</td><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td><td>The string to sanitise.</td></tr><tr><td>$mdt</td><td><a  href="https://www.php.net/manual/en/language.types.boolean.php">bool</a></td><td>Whether to additionally sanitise for use in a Markdown table</td></tr><tr><td>return</td><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td><td>Sanitised string</td></tr></tbody></table>
 
 Declared in BeastBytes\CodPhp\Writer\Markdown\Helpers
 

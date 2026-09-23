@@ -1,6 +1,6 @@
 ---
 title: InheritanceLevel
-lastUpdated: 2026-09-22 11:35:53
+lastUpdated: 2026-09-23 10:29:06
 description: Inheritance level of methods and properties included in elements.
 head:
   - - meta
@@ -16,8 +16,6 @@ head:
 <a  href="https://github.com/beastbytes/cod-php/blob/master/src/InheritanceLevel.php">Source Code</a>
 
 Inheritance level of methods and properties included in elements.
-
-
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp</td></tr></tbody></table>
 

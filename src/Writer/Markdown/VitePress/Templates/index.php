@@ -38,7 +38,7 @@ foreach ([$classes, $interfaces, $traits, $enums] as $elements):
         $md .= sprintf(
             '| %s | %s |' . PHP_EOL,
             Helpers::linkElements($namespace, $element),
-            $element->summary
+            $element->hasSummary ? Helpers::sanitise($element->summary, true) : ''
         );
     endforeach;
 

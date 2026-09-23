@@ -1,6 +1,6 @@
 ---
 title: Language
-lastUpdated: 2026-09-22 11:35:53
+lastUpdated: 2026-09-23 10:29:05
 description: Language codes for use when generating links to PHP types
 head:
   - - meta
@@ -16,8 +16,6 @@ head:
 <a  href="https://github.com/beastbytes/cod-php/blob/master/src/Type/Language.php">Source Code</a>
 
 Language codes for use when generating links to PHP types
-
-
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp\Type</td></tr><tr><th>Backing Type</th><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td></tr></tbody></table>
 

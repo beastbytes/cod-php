@@ -1,6 +1,6 @@
 ---
 title: TypeTrait
-lastUpdated: 2026-09-22 11:35:53
+lastUpdated: 2026-09-23 10:29:06
 description: Provides information about and the type of a parameter or property.
 head:
   - - meta
@@ -16,8 +16,6 @@ head:
 <a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/TypeTrait.php">Source Code</a>
 
 Provides information about and the type of a parameter or property.
-
-
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp\Element</td></tr></tbody></table>
 

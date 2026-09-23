@@ -1,6 +1,6 @@
 ---
 title: RenderFailedException
-lastUpdated: 2026-09-22 11:35:53
+lastUpdated: 2026-09-23 10:29:06
 description: Exception thrown if the rendering of a template fails.
 head:
   - - meta
@@ -16,8 +16,6 @@ head:
 <a  href="https://github.com/beastbytes/cod-php/blob/master/src/Renderer/RenderFailedException.php">Source Code</a>
 
 Exception thrown if the rendering of a template fails.
-
-
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp\Renderer</td></tr><tr><th>Inheritance</th><td>
 
