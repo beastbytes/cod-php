@@ -252,6 +252,26 @@ final class Helpers
     }
 
     /**
+     * Sanitise a string for HTML, and optionally in a Markdown table.
+     *
+     * This function also resolves inline `@link` tags.
+     *
+     * @param string $string The string to sanitise.
+     * @param bool $mdt Whether to additionally sanitise for use in a Markdown table
+     * @return string Sanitised string
+     */
+    public static function sanitise(string $string, bool $mdt = false): string
+    {
+        $string = nl2br(htmlspecialchars($string));
+
+        if ($mdt) {
+            $string = str_replace('|', '\\|', $string);
+        }
+
+        return self::resolveInlineLink($string);
+    }
+
+    /**
      * Generate a link to object element source code;
      *
      * @param string $baseUrl Source code base URL
@@ -433,5 +453,28 @@ final class Helpers
         }
 
         return self::$extensions;
+    }
+
+    private static function resolveInlineLink(string $string): string
+    {
+        $regex = '|\{@link\s+(?<uri>[^\s}]+)\s*(?<text>.*?)}|';
+
+        $matches = [];
+        preg_match_all($regex, $string, $matches, PREG_SET_ORDER, 0);
+
+        $links = [];
+        foreach ($matches as $match) {
+            $links[] = sprintf(
+                '<a href="%s" target="_blank">%s</a>',
+                $match['uri'],
+                (bool) $match['text'] ? $match['text'] : $match['uri']
+            );
+        }
+
+        foreach ($links as $link) {
+            $string = preg_replace(['|\{.*?}|'], $link, $string, 1);
+        }
+
+        return $string;
     }
 }
