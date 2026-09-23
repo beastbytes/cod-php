@@ -24,10 +24,10 @@ $md = $this->render(
 
 $md .= '<table><tbody>';
 $md .= sprintf('<tr><th>Namespace</th><td>%s</td></tr>', $element->namespace);
-$md .= sprintf('<tr><th>Inheritance</th><td>%s</td></tr>', Helpers::tdList($element, 'inheritance'));
+$md .= sprintf('<tr><th>Inheritance</th><td>%s</td></tr>', Helpers::tdList($element, 'inheritance', $language));
 
 if ($element->implementsInterfaces):
-    $md .= sprintf('<tr><th>Implements</th><td>%s</td></tr>', Helpers::tdList($element, 'interfaces'));
+    $md .= sprintf('<tr><th>Implements</th><td>%s</td></tr>', Helpers::tdList($element, 'interfaces', $language));
 endif;
 
 if ($element->usesTraits):

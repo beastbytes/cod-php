@@ -295,19 +295,40 @@ final class Helpers
      *
      * @param ObjectElement $element Current element.
      * @param string $property Property to list.
+     * @param ?Language $language PHP Manual language.
      * @return string List of items.
      */
-    public static function tdList(ObjectElement $element, string $property): string
+    public static function tdList(ObjectElement $element, string $property, ?Language $language = null): string
     {
         $list = [];
 
         /** @var ObjectElement $item */
         foreach ($element->$property as $item) {
             $pathTo = $element->pathTo($item);
-            $list[] = is_string($pathTo)
-                ? sprintf(self::MD_LINK, $item->fqcn, sprintf(self::MD_DOC, self::toKebabCase($pathTo)))
-                : $item->fqcn
-            ;
+
+            if (is_string($pathTo)) {
+                $list[] = sprintf(
+                    self::MD_LINK,
+                    $item->fqcn,
+                    sprintf(self::MD_DOC, self::toKebabCase($pathTo))
+                );
+            } else {
+                if ($language === null) {
+                    throw new RuntimeException('`$language` must be set for PHP built-in types, classes and interfaces');
+                }
+
+                $href = self::phpType($item->fqcn, $language);
+
+                if (is_string($href)) {
+                    if (str_starts_with($href, 'http')) {
+                        $list[] = sprintf(self::MD_LINK, $item->fqcn, $href);
+                    } else {
+                        $list[] = $item->fqcn;
+                    }
+                } else {
+                    $list[] = $item->fqcn;
+                }
+            }
         }
 
         return sprintf(self::TD_LIST, implode('<br>', $list));
@@ -389,11 +410,26 @@ final class Helpers
             }
         }
 
-        $epytPhp = new ReflectionEnum(PhpType::class);
+        //@todo use self::phpType()
+        //$epytPhp = new ReflectionEnum(PhpType::class);
 
         foreach ($types as &$type) {
             $type = trim($type, '\\');
 
+            $phpType = self::phpType($type, $language);
+
+            if (is_string($phpType)) {
+                if (str_starts_with($phpType, 'http')) {
+                    $type = self::a($type, str_replace(self::LANGUAGE, $language->value, $phpType));
+                } else {
+                    $type = $phpType;
+                }
+            } else {
+                $path = $element->pathTo(new ClassElement(new ReflectionClass($type)));
+                $type = is_string($path) ? self::a($type, sprintf(self::MD_DOC, $path)) : $type;
+            }
+
+            /*
             if ($epytPhp->hasCase($type)) {
                 $href = $epytPhp->getCase($type)->getBackingValue();
 
@@ -401,43 +437,22 @@ final class Helpers
                     $type = self::a($type, str_replace(self::LANGUAGE, $language->value, $href));
                 }
             } else {
-                $extensionType = self::inExtension($type, $language);
+                $extensionType = self::phpExtension($type, $language);
 
                 if ($extensionType === null) {
                     $path = $element->pathTo(new ClassElement(new ReflectionClass($type)));
                     $type = is_string($path) ? self::a($type, sprintf(self::MD_DOC, $path)) : $type;
                 } else {
-                    $type = $extensionType;
+                    $type = self::a(
+                        $type,
+                        str_replace(self::LANGUAGE, $language->value, $extensionType)
+                    );
                 }
             }
+            */
         }
 
         return implode($separator, $types);
-    }
-
-    /**
-     * @throws ReflectionException
-     */
-    private static function inExtension(string $type, Language $language): ?string
-    {
-        foreach (self::extensions() as $extension) {
-            $noisnetxe = new ReflectionEnum($extension);
-
-            if ($noisnetxe->hasCase($type)) {
-                return self::a(
-                    $type,
-                    str_replace(
-                        self::LANGUAGE,
-                        $language->value,
-                        $noisnetxe
-                            ->getCase($type)
-                            ->getBackingValue()
-                    )
-                );
-            }
-        }
-
-        return null;
     }
 
     private static function extensions(): array
@@ -448,11 +463,49 @@ final class Helpers
                     ->only('**.php'),
                 'recursive' => true,
             ]) as $file) {
-                self::$extensions[] = self::EXTENSIONS_NAMESPACE . pathinfo($file, PATHINFO_FILENAME);
+                self::$extensions[] = new ReflectionEnum(
+                    self::EXTENSIONS_NAMESPACE . pathinfo($file, PATHINFO_FILENAME)
+                );
             }
         }
 
         return self::$extensions;
+    }
+
+    /**
+     * @throws ReflectionException
+     */
+    private static function phpExtension(string $type): ?string
+    {
+        foreach (self::extensions() as $extension) {
+            if ($extension->hasCase($type)) {
+                return $extension->getCase($type)->getBackingValue();
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Returns the backing value `$type` is a PHP type - including classes and interfaces and this in extensions, or `null` if not.
+     *
+     * The return string is typically a URL to the `$type` PHP documentation; exceptions being if `$type` is `self` or `static`
+     */
+    private static function phpType(string $type, Language $language): ?string
+    {
+        $epytPhp = new ReflectionEnum(PhpType::class);
+
+        if ($epytPhp->hasCase($type)) {
+            $uri = $epytPhp->getCase($type)->getBackingValue();
+        } else {
+            $uri = self::phpExtension($type);
+        }
+
+        if (is_string($uri) && str_starts_with($uri, 'http')) {
+            return str_replace(self::LANGUAGE, $language->value, $uri);
+        }
+
+        return $uri;
     }
 
     private static function resolveInlineLink(string $string): string

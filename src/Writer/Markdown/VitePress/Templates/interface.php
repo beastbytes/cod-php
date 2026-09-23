@@ -24,7 +24,7 @@ $md = $this->render(
 
 $md .= '<table><tbody>';
 $md .= sprintf('<tr><th>Namespace</th><td>%s</td></tr>', $element->namespace);
-$md .= sprintf('<tr><th>Inheritance</th><td>%s</td></tr>', Helpers::tdList($element, 'inheritance'));
+$md .= sprintf('<tr><th>Inheritance</th><td>%s</td></tr>', Helpers::tdList($element, 'inheritance', $language));
 $md .= sprintf('<tr><th>Implemented by</th><td>%s</td></tr>', Helpers::tdList($element, 'implementedBy'));
 $md .= '</tbody></table>' . PHP_EOL . PHP_EOL;
 
