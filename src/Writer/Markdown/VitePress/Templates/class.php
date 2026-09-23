@@ -53,4 +53,9 @@ $md .= $this->render(
     compact('baseUrl', 'element', 'namespace', 'errorLevel', 'language')
 );
 
+$md .= $this->render(
+    '_links',
+    compact('baseUrl', 'element', 'namespace', 'errorLevel')
+);
+
 echo $md;
