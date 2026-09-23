@@ -1,6 +1,6 @@
 ---
 title: CodPhp
-lastUpdated: 2026-09-23 10:29:06
+lastUpdated: 2026-09-23 12:59:37
 description: CodPhp application runner for Symfony Console
 head:
   - - meta
@@ -28,7 +28,7 @@ BeastBytes\CodPhp\CodPhp
 | Name | Value | Description | Defined In |
 |-|-|-|-|
 | NAME | &#039;CodPhp API Documentation Generator&#039; | Human-readable name of the application. | BeastBytes\CodPhp\CodPhp |
-| VERSION | &#039;1.0.0&#039; | Current version of the application. | BeastBytes\CodPhp\CodPhp |
+| VERSION | &#039;1.1.0&#039; | Current version of the application. | BeastBytes\CodPhp\CodPhp |
 
 ## Methods
 
