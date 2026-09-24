@@ -1,6 +1,6 @@
 ---
 title: DefaultValueTrait
-lastUpdated: 2026-09-23 18:38:54
+lastUpdated: 2026-09-24 18:43:48
 description: Provides the string representation of the default value of a parameter or property element.
 head:
   - - meta
@@ -10,6 +10,12 @@ head:
     - name: Generator
       content: CodPhp
 ---
+
+# trait `DefaultValueTrait`
+
+<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/DefaultValueTrait.php">Source Code</a>
+
+Provides the string representation of the default value of a parameter or property element.
 
 # trait `DefaultValueTrait`
 

@@ -1,6 +1,6 @@
 ---
 title: ObjectElement
-lastUpdated: 2026-09-23 18:38:54
+lastUpdated: 2026-09-24 18:43:49
 description: Abstract class for object - class, enum, interface, and trait - structural elements.
 head:
   - - meta

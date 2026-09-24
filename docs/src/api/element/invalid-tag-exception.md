@@ -1,7 +1,7 @@
 ---
 title: InvalidTagException
-lastUpdated: 2026-09-23 18:38:54
-description: 
+lastUpdated: 2026-09-24 18:43:48
+description: Exception thrown if a tag is invalid
 head:
   - - meta
     - name: element-type
@@ -14,6 +14,8 @@ head:
 # class `InvalidTagException`
 
 <a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/InvalidTagException.php">Source Code</a>
+
+Exception thrown if a tag is invalid
 
 <table><tbody><tr><th>Namespace</th><td>BeastBytes\CodPhp\Element</td></tr><tr><th>Inheritance</th><td>
 

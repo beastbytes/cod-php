@@ -1,6 +1,6 @@
 ---
 title: Index
-lastUpdated: 2026-09-23 18:38:54
+lastUpdated: 2026-09-24 18:43:49
 description: API Index
 head:
   - - meta
@@ -26,7 +26,7 @@ head:
 | [BeastBytes\CodPhp\Element\EnumCaseElement](element/enum-case-element) | Represents an EnumBackedCase or EnumUnitCase structural element. |
 | [BeastBytes\CodPhp\Element\EnumElement](element/enum-element) | Represents an Enum structural element. |
 | [BeastBytes\CodPhp\Element\InterfaceElement](element/interface-element) | Represents an Interface structural element. |
-| [BeastBytes\CodPhp\Element\InvalidTagException](element/invalid-tag-exception) |  |
+| [BeastBytes\CodPhp\Element\InvalidTagException](element/invalid-tag-exception) | Exception thrown if a tag is invalid |
 | [BeastBytes\CodPhp\Element\MethodElement](element/method-element) | Represents a Method structural element. |
 | [BeastBytes\CodPhp\Element\ObjectElement](element/object-element) | Abstract class for object - class, enum, interface, and trait - structural elements. |
 | [BeastBytes\CodPhp\Element\ParameterElement](element/parameter-element) | Represents a Parameter structural element. |
