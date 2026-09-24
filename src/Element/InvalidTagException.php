@@ -6,4 +6,5 @@ namespace BeastBytes\CodPhp\Element;
 
 use RuntimeException;
 
+/** Exception thrown if a tag is invalid */
 class InvalidTagException extends RuntimeException {}
