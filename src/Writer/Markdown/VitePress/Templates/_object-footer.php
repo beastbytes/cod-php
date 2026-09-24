@@ -14,7 +14,7 @@ $md = '';
 $links = $this->render('_links', compact('element'));
 
 if (!empty($links)):
-    $md .= sprintf('## Related' . PHP_EOL . PHP_EOL . '%s' . PHP_EOL  , $links);
+    $md .= sprintf('## Related' . PHP_EOL . PHP_EOL . '%s' . PHP_EOL . '---' . PHP_EOL , $links);
 endif;
 
 echo $md;
