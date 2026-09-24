@@ -135,6 +135,27 @@ final class Helpers
     }
 
     /**
+     * Generates a Markdown link between two elements or a FQCN to an element.
+     *
+     * @param ObjectElement|string $from Start element or FQCN
+     * @param ObjectElement $to Destination element
+     * @return string Markdown link
+     */
+    public static function linkElements(ObjectElement|string $from, ObjectElement $to): string
+    {
+        if ($from instanceof ObjectElement) {
+            $path = $from->pathTo($to);
+        } else {
+            $path = str_replace('\\', '/', substr($to->fqcn, strlen($from) + 1));
+        }
+
+        return is_string($path)
+            ? sprintf(self::MD_LINK, $to->fqcn, self::toKebabCase($path))
+            : $to->fqcn
+        ;
+    }
+
+    /**
      * Generates a list of links.
      *
      * @param Link[] $links Links to list
@@ -177,27 +198,6 @@ final class Helpers
         }
 
         return implode(PHP_EOL, $list) . PHP_EOL;
-    }
-
-    /**
-     * Generates a Markdown link between two elements or a FQCN to an element.
-     *
-     * @param ObjectElement|string $from Start element or FQCN
-     * @param ObjectElement $to Destination element
-     * @return string Markdown link
-     */
-    public static function linkElements(ObjectElement|string $from, ObjectElement $to): string
-    {
-        if ($from instanceof ObjectElement) {
-            $path = $from->pathTo($to);
-        } else {
-            $path = str_replace('\\', '/', substr($to->fqcn, strlen($from) + 1));
-        }
-
-        return is_string($path)
-            ? sprintf(self::MD_LINK, $to->fqcn, self::toKebabCase($path))
-            : $to->fqcn
-        ;
     }
 
     /**
@@ -410,9 +410,6 @@ final class Helpers
             }
         }
 
-        //@todo use self::phpType()
-        //$epytPhp = new ReflectionEnum(PhpType::class);
-
         foreach ($types as &$type) {
             $type = trim($type, '\\');
 
@@ -428,28 +425,6 @@ final class Helpers
                 $path = $element->pathTo(new ClassElement(new ReflectionClass($type)));
                 $type = is_string($path) ? self::a($type, sprintf(self::MD_DOC, $path)) : $type;
             }
-
-            /*
-            if ($epytPhp->hasCase($type)) {
-                $href = $epytPhp->getCase($type)->getBackingValue();
-
-                if (str_starts_with($href, 'http')) {
-                    $type = self::a($type, str_replace(self::LANGUAGE, $language->value, $href));
-                }
-            } else {
-                $extensionType = self::phpExtension($type, $language);
-
-                if ($extensionType === null) {
-                    $path = $element->pathTo(new ClassElement(new ReflectionClass($type)));
-                    $type = is_string($path) ? self::a($type, sprintf(self::MD_DOC, $path)) : $type;
-                } else {
-                    $type = self::a(
-                        $type,
-                        str_replace(self::LANGUAGE, $language->value, $extensionType)
-                    );
-                }
-            }
-            */
         }
 
         return implode($separator, $types);
