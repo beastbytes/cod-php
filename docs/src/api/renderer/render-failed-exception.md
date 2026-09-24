@@ -1,6 +1,6 @@
 ---
 title: RenderFailedException
-lastUpdated: 2026-09-24 18:43:49
+lastUpdated: 2026-09-24 19:00:07
 description: Exception thrown if the rendering of a template fails.
 head:
   - - meta

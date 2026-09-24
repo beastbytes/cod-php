@@ -1,6 +1,6 @@
 ---
 title: DeclaringClassTrait
-lastUpdated: 2026-09-24 18:43:48
+lastUpdated: 2026-09-24 19:00:07
 description: Provides the declaring class of an element.
 head:
   - - meta

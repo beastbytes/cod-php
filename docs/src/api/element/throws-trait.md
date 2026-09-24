@@ -1,6 +1,6 @@
 ---
 title: ThrowsTrait
-lastUpdated: 2026-09-24 18:43:48
+lastUpdated: 2026-09-24 19:00:06
 description: Provides information about and the exceptions thrown by an element.
 head:
   - - meta

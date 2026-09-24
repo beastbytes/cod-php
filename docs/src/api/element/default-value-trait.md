@@ -1,6 +1,6 @@
 ---
 title: DefaultValueTrait
-lastUpdated: 2026-09-24 18:43:48
+lastUpdated: 2026-09-24 19:00:06
 description: Provides the string representation of the default value of a parameter or property element.
 head:
   - - meta

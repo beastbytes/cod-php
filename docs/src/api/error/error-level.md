@@ -1,6 +1,6 @@
 ---
 title: ErrorLevel
-lastUpdated: 2026-09-24 18:43:48
+lastUpdated: 2026-09-24 19:00:06
 description: Used to define the maximum error reporting level.
 head:
   - - meta

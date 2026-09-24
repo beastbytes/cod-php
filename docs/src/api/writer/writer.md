@@ -1,6 +1,6 @@
 ---
 title: Writer
-lastUpdated: 2026-09-24 18:43:48
+lastUpdated: 2026-09-24 19:00:06
 description: Base Writer class that provides properties and methods common to all concrete Writer classes.
 head:
   - - meta

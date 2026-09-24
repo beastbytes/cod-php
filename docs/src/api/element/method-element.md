@@ -1,6 +1,6 @@
 ---
 title: MethodElement
-lastUpdated: 2026-09-24 18:43:48
+lastUpdated: 2026-09-24 19:00:07
 description: Represents a Method structural element.
 head:
   - - meta
