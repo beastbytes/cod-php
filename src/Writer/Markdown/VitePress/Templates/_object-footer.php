@@ -10,10 +10,11 @@ use BeastBytes\CodPhp\Writer\Writer;
  * @var Writer $this
  */
 
-$md = $this->render('_links', compact('element'));
+$md = '';
+$links = $this->render('_links', compact('element'));
 
 if (!empty($links)):
-    $md .= sprintf('## Related' . PHP_EOL . PHP_EOL . '%s', $links);
+    $md .= sprintf('## Related' . PHP_EOL . PHP_EOL . '%s' . PHP_EOL  , $links);
 endif;
 
 echo $md;

@@ -15,13 +15,14 @@ use BeastBytes\CodPhp\Writer\Writer;
  * @var Language $language
  * @var string $namespace
  * @var Writer $this
- */
 
 $md = $this->render(
     '_object-header',
     compact('baseUrl', 'element', 'namespace', 'errorLevel')
 );
+*/
 
+$md = '';
 $md .= '<table><tbody>';
 $md .= sprintf('<tr><th>Namespace</th><td>%s</td></tr>', $element->namespace);
 
@@ -45,11 +46,6 @@ $md .= $this->render(
 $md .= $this->render(
     '_methods',
     compact('baseUrl', 'element', 'namespace', 'errorLevel', 'language')
-);
-
-$md .= $this->render(
-    '_links',
-    compact('baseUrl', 'element', 'namespace', 'errorLevel')
 );
 
 echo $md;

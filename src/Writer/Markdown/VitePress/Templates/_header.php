@@ -14,7 +14,7 @@ use BeastBytes\CodPhp\Writer\Writer;
  * @var Writer $this
  */
 
-echo sprintf(
+$output = sprintf(
     <<<FRONT_MATTER
     ---
     title: %s
@@ -36,3 +36,12 @@ echo sprintf(
     str_replace(PHP_EOL, ' ', (string) $element->summary),
     $element->elementType,
 );
+
+if ($element instanceof ObjectElement) {
+    $output .= $this->render(
+        '_object-header',
+        compact('baseUrl', 'element', 'namespace', 'errorLevel')
+    );
+}
+
+echo $output;
