@@ -4,7 +4,7 @@
   "description": "Vitepress documentation generator",
   "type": "module",
   "devDependencies": {
-    "playwright": "^1.0",
+    "playwright": "^1.63.0",
     "vitepress": "2.0.0-alpha.17"
   },
   "scripts": {
@@ -15,12 +15,12 @@
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "^12.0",
+      "version": "^12.6.0",
       "onFail": "download"
     },
     "runtime": {
       "name": "node",
-      "version": "^24.0",
+      "version": "^24.21.0",
       "onFail": "download"
     }
   }
