@@ -1,6 +1,6 @@
 ---
 title: Writer
-lastUpdated: 2026-09-25 10:51:06
+lastUpdated: 2026-09-25 20:11:01
 description: Writer that generates documentation in Markdown format and configuration for use with the VitePress static site generator.
 head:
   - - meta

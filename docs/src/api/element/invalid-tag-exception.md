@@ -1,6 +1,6 @@
 ---
 title: InvalidTagException
-lastUpdated: 2026-09-25 10:51:07
+lastUpdated: 2026-09-25 20:11:02
 description: Exception thrown if a tag is invalid
 head:
   - - meta

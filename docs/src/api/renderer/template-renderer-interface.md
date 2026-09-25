@@ -1,6 +1,6 @@
 ---
 title: TemplateRendererInterface
-lastUpdated: 2026-09-25 10:51:07
+lastUpdated: 2026-09-25 20:11:02
 description: Interface for template renderers.
 head:
   - - meta
@@ -10,12 +10,6 @@ head:
     - name: Generator
       content: CodPhp
 ---
-
-# interface `TemplateRendererInterface`
-
-<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Renderer/TemplateRendererInterface.php">Source Code</a>
-
-Interface for template renderers.
 
 # interface `TemplateRendererInterface`
 

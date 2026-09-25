@@ -1,6 +1,6 @@
 ---
 title: TemplateNotFoundException
-lastUpdated: 2026-09-25 10:51:06
+lastUpdated: 2026-09-25 20:11:01
 description: Exception thrown if a template cannot be found.
 head:
   - - meta

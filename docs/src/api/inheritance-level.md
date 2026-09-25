@@ -1,6 +1,6 @@
 ---
 title: InheritanceLevel
-lastUpdated: 2026-09-25 10:51:07
+lastUpdated: 2026-09-25 20:11:02
 description: Inheritance level of methods and properties included in elements.
 head:
   - - meta

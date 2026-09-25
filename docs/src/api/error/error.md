@@ -1,6 +1,6 @@
 ---
 title: Error
-lastUpdated: 2026-09-25 10:51:07
+lastUpdated: 2026-09-25 20:11:01
 description: Represents a structural element documentation error.
 head:
   - - meta

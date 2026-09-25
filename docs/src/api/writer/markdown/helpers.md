@@ -1,6 +1,6 @@
 ---
 title: Helpers
-lastUpdated: 2026-09-25 10:51:06
+lastUpdated: 2026-09-25 20:11:01
 description: Static helper functions for the writer.
 head:
   - - meta

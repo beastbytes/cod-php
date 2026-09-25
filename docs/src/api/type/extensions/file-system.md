@@ -1,6 +1,6 @@
 ---
 title: FileSystem
-lastUpdated: 2026-09-25 10:51:07
+lastUpdated: 2026-09-25 20:11:01
 description: Links to PHP File System extensions documentation.
 head:
   - - meta

@@ -1,6 +1,6 @@
 ---
 title: Element
-lastUpdated: 2026-09-25 10:51:07
+lastUpdated: 2026-09-25 20:11:02
 description: Base class for all structural elements.
 head:
   - - meta

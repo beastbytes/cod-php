@@ -1,6 +1,6 @@
 ---
 title: TypeTrait
-lastUpdated: 2026-09-25 10:51:07
+lastUpdated: 2026-09-25 20:11:02
 description: Provides information about and the type of a parameter or property.
 head:
   - - meta
@@ -10,12 +10,6 @@ head:
     - name: Generator
       content: CodPhp
 ---
-
-# trait `TypeTrait`
-
-<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/TypeTrait.php">Source Code</a>
-
-Provides information about and the type of a parameter or property.
 
 # trait `TypeTrait`
 

@@ -1,6 +1,6 @@
 ---
 title: PropertyTrait
-lastUpdated: 2026-09-25 10:51:07
+lastUpdated: 2026-09-25 20:11:01
 description: Provides information about and the properties of an element.
 head:
   - - meta
@@ -10,12 +10,6 @@ head:
     - name: Generator
       content: CodPhp
 ---
-
-# trait `PropertyTrait`
-
-<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Element/PropertyTrait.php">Source Code</a>
-
-Provides information about and the properties of an element.
 
 # trait `PropertyTrait`
 

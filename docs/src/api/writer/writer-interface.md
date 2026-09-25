@@ -1,6 +1,6 @@
 ---
 title: WriterInterface
-lastUpdated: 2026-09-25 10:51:06
+lastUpdated: 2026-09-25 20:11:01
 description: An interface for Writer classes.
 head:
   - - meta
@@ -10,12 +10,6 @@ head:
     - name: Generator
       content: CodPhp
 ---
-
-# interface `WriterInterface`
-
-<a  href="https://github.com/beastbytes/cod-php/blob/master/src/Writer/WriterInterface.php">Source Code</a>
-
-An interface for Writer classes.
 
 # interface `WriterInterface`
 
