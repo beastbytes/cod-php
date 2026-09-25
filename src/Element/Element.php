@@ -247,12 +247,23 @@ abstract class Element
     /**
      * Returns a value indicating whether the element has the specified tag.
      *
-     * @param string $tag Name of the tag.
-     * @return bool `true` if the element has the specified taf, `false` if not.
+     * @param string $name Name of the tag.
+     * @return bool `true` if the element has the specified tag, `false` if not.
      */
-    public function hasTag(string $tag): bool
+    public function hasTag(string $name): bool
     {
-        return $this->hasDocBlock && $this->docBlock->hasTag($tag);
+        return $this->hasDocBlock && $this->docBlock->hasTag($name);
+    }
+
+    /**
+     * Returns the content of the specifies tag or `null` if the element does not have the specified tag.
+     *
+     * @param string $name Name of the tag.
+     * @return ?string Content of the specifies tag or `null` if the element does not have the specified tag.
+     */
+    public function getTag(string $name): ?string
+    {
+        return $this->hasTag($name) ? (string) $this->getTags($name)[0] : null;
     }
 
     /**
@@ -268,11 +279,6 @@ abstract class Element
         }
 
         return self::$elements;
-    }
-
-    private function getTag(string $name): Tag
-    {
-        return $this->getTags($name)[0];
     }
 
     private function getTags(string $name): array
