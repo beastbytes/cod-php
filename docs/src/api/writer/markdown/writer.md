@@ -1,6 +1,6 @@
 ---
 title: Writer
-lastUpdated: 2026-09-24 19:00:06
+lastUpdated: 2026-09-25 10:51:07
 description: Abstract Writer that generates documentation in Markdown format.
 head:
   - - meta

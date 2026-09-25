@@ -1,6 +1,6 @@
 ---
 title: OutputFileNotWrittenException
-lastUpdated: 2026-09-24 19:00:06
+lastUpdated: 2026-09-25 10:51:07
 description: Exception thrown if writing an output file fails.
 head:
   - - meta

@@ -1,6 +1,6 @@
 ---
 title: ParameterElement
-lastUpdated: 2026-09-24 19:00:06
+lastUpdated: 2026-09-25 10:51:07
 description: Represents a Parameter structural element.
 head:
   - - meta
@@ -372,10 +372,20 @@ Declared in [BeastBytes\CodPhp\Element\Element](element)
 
 ---
 
+### getTag()
+Returns the content of the specifies tag or `null` if the element does not have the specified tag.
+
+<table><tbody><tr><td colspan="3"><span class="cod-php-visibility">public</span>  function getTag(<span class="cod-php-type"><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></span> $name): <span class="type"><a  href="https://www.php.net/manual/en/language.types.string.php">string</a>|<a  href="https://www.php.net/manual/en/language.types.null.php">null</a></span></td></tr><tr><td>$name</td><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td><td>Name of the tag.</td></tr><tr><td>return</td><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a>|<a  href="https://www.php.net/manual/en/language.types.null.php">null</a></td><td>Content of the specifies tag or `null` if the element does not have the specified tag.</td></tr></tbody></table>
+
+Declared in [BeastBytes\CodPhp\Element\Element](element)
+
+
+---
+
 ### hasTag()
 Returns a value indicating whether the element has the specified tag.
 
-<table><tbody><tr><td colspan="3"><span class="cod-php-visibility">public</span>  function hasTag(<span class="cod-php-type"><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></span> $tag): <span class="type"><a  href="https://www.php.net/manual/en/language.types.boolean.php">bool</a></span></td></tr><tr><td>$tag</td><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td><td>Name of the tag.</td></tr><tr><td>return</td><td><a  href="https://www.php.net/manual/en/language.types.boolean.php">bool</a></td><td>`true` if the element has the specified taf, `false` if not.</td></tr></tbody></table>
+<table><tbody><tr><td colspan="3"><span class="cod-php-visibility">public</span>  function hasTag(<span class="cod-php-type"><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></span> $name): <span class="type"><a  href="https://www.php.net/manual/en/language.types.boolean.php">bool</a></span></td></tr><tr><td>$name</td><td><a  href="https://www.php.net/manual/en/language.types.string.php">string</a></td><td>Name of the tag.</td></tr><tr><td>return</td><td><a  href="https://www.php.net/manual/en/language.types.boolean.php">bool</a></td><td>`true` if the element has the specified tag, `false` if not.</td></tr></tbody></table>
 
 Declared in [BeastBytes\CodPhp\Element\Element](element)
 

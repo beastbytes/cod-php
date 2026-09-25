@@ -1,6 +1,6 @@
 ---
 title: Mathematical
-lastUpdated: 2026-09-24 19:00:06
+lastUpdated: 2026-09-25 10:51:07
 description: Links to PHP type documentation.
 head:
   - - meta
