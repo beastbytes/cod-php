@@ -22,6 +22,7 @@ out-of-the-box, **CodPhp** generates documentation in [Markdown](https://www.mar
 * **Flexible templating and output formating** - **CodPhp** supports using a user defined template renderers, templates, and/or Writers, allowing documentation to be generated in any format. Out-of-the-box, **CodPhp** generates documentation in [Markdown](https://www.markdownlang.com/) suitable for use with [VitePress](https://vitepress.dev/).
 
 ## Supported DocBlock Tags
+### Standard Tags
 * `@api` - Includes an element in the API; documentation for the element is generated. **Note**: higher precedence than `@ignore` and `@internal`.
 * `@copyright` - Generates a copyright notice.
 * `@deprecated` - Generates a deprecation notice.
@@ -43,7 +44,17 @@ the `@api` tag takes precedence and documentation for the element is generated.
 
 If an element does not have DocBlock or any of the `@api`, `@ignore` or `@internal` tags,
 it is considered to be part of the API and documentation for the element is generated.
-::: 
+:::
+
+### Custom Tags
+*CodPhp* supports the use of custom tags of the form `@tagNane tagContent`.
+
+::: info
+Use of custom tags is template dependant; see the documentation for the templates being used.
+:::
+
+#### Built-in Templates
+* `@default` - Can be applied to methods to define a default value if the method is not called. 
 
 ## Renderer, Templates, and Writer
 ### Out-of-the-box
