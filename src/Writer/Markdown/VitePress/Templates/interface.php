@@ -17,12 +17,7 @@ use BeastBytes\CodPhp\Writer\Writer;
  * @var Writer $this
  */
 
-$md = $this->render(
-    '_object-header',
-    compact('baseUrl', 'element', 'namespace', 'errorLevel')
-);
-
-$md .= '<table><tbody>';
+$md = '<table><tbody>';
 $md .= sprintf('<tr><th>Namespace</th><td>%s</td></tr>', $element->namespace);
 $md .= sprintf('<tr><th>Inheritance</th><td>%s</td></tr>', Helpers::tdList($element, 'inheritance', $language));
 $md .= sprintf('<tr><th>Implemented by</th><td>%s</td></tr>', Helpers::tdList($element, 'implementedBy'));

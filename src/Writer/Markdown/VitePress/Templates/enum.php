@@ -15,11 +15,6 @@ use BeastBytes\CodPhp\Writer\Writer;
  * @var Language $language
  * @var string $namespace
  * @var Writer $this
-
-$md = $this->render(
-    '_object-header',
-    compact('baseUrl', 'element', 'namespace', 'errorLevel')
-);
 */
 
 $md = '';

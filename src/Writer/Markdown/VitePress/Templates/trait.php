@@ -17,12 +17,7 @@ use BeastBytes\CodPhp\Writer\Writer;
  * @var Writer $this
  */
 
-$md = $this->render(
-    '_object-header',
-    compact('baseUrl', 'element', 'namespace', 'errorLevel')
-);
-
-$md .= '<table><tbody>';
+$md = '<table><tbody>';
 $md .= sprintf('<tr><th>Namespace</th><td>%s</td></tr>', $element->namespace);
 
 if ($element->implementsInterfaces):
