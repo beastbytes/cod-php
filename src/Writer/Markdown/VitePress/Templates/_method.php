@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use BeastBytes\CodPhp\Element\MethodElement;
 use BeastBytes\CodPhp\Element\ObjectElement;
+use BeastBytes\CodPhp\Element\ParameterElement;
 use BeastBytes\CodPhp\Error\Collection as ErrorCollection;
 use BeastBytes\CodPhp\Error\ErrorLevel;
 use BeastBytes\CodPhp\Type\Language;
@@ -20,7 +21,7 @@ use BeastBytes\CodPhp\Writer\Writer;
  * @var Writer $this
  */
 
-$md = sprintf('### %s()' . PHP_EOL , $method->name);
+$md = sprintf('### %s()' . PHP_EOL, $method->name);
 
 if ($method->hasSummary):
     $md .= $method->summary . PHP_EOL . PHP_EOL;
@@ -75,6 +76,10 @@ else:
 endif;
 
 if ($method->hasParameters):
+    /**
+     * @var string $name
+     * @var ParameterElement $parameter
+     */
     foreach ($method->parameters as $name => $parameter):
         $md .= sprintf(
             '<tr><td>$%s</td><td>%s</td><td>%s</td></tr>',
@@ -105,7 +110,12 @@ endif;
 
 $md .= '</tbody></table>' . PHP_EOL . PHP_EOL;
 
+if ($method->hasTag('default')):
+    $md .= sprintf('Default: %s' . PHP_EOL . PHP_EOL, $method->getTag('default'));
+endif;
+
 $md .= sprintf('Declared in %s' . PHP_EOL . PHP_EOL, Helpers::linkElements($element, $method->declaringClass));
+/** @psalm-suppress InvalidScope */
 $links = $this->render('_links', ['element' => $method]);
 
 if (!empty($links)):
